@@ -2,7 +2,7 @@
 const bodyParser = require ("body-parser");
 const express = require('express');
 const app = express();
-process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 // Set view engine
 app.set('view engine', 'ejs');
