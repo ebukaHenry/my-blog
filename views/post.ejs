@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+
+<!-- views/post.ejs -->
+<h1><%= post.title %></h1>
+<p><strong>By:</strong> <%= post.author %></p>
+<p><strong>Date:</strong> <%= new Date(post.date).toLocaleDateString() %></p>
+<p><%= post.content %></p>
+<a href="/blog">← Back to blog</a>
+
+<%- include('partials/footer') %>
+
