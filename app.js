@@ -2,7 +2,7 @@
 const bodyParser = require ("body-parser");
 const express = require('express');
 const app = express();
-const port = 3000;
+process.env.PORT || 3000;
 
 // Set view engine
 app.set('view engine', 'ejs');
@@ -71,5 +71,5 @@ app.get('/contact', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Church website running at http://localhost:${port}`);
+  console.log(`Church website running at ${port}`);
 });
